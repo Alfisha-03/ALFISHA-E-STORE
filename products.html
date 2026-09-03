@@ -1,0 +1,1544 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Products | ALFISHA E-STORE</title>
+
+    <meta name="description"
+        content="Explore smartphones, laptops, headphones, smart watches, tablets, speakers, gaming products and accessories at ALFISHA E-STORE.">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Outfit:wght@500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header class="site-header">
+
+    <nav class="navbar">
+
+        <a href="index.html" class="logo">
+            <span class="logo-icon">
+                <i class="fa-solid fa-bolt"></i>
+            </span>
+
+            <span class="logo-text">
+                ALFISHA
+                <small>E-STORE</small>
+            </span>
+
+            <span class="brand-cart">
+                <i class="fa-solid fa-cart-shopping"></i>
+            </span>
+        </a>
+
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="products.html" class="active">Products</a>
+            <a href="services.html">Services</a>
+            <a href="about.html">About</a>
+        </div>
+
+        <div class="nav-actions">
+
+            <button class="nav-icon search-button" aria-label="Search">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+
+            <a href="wishlist.html" class="nav-icon" aria-label="Wishlist">
+                <i class="fa-regular fa-heart"></i>
+                <span class="nav-badge wishlist-count">0</span>
+            </a>
+
+            <a href="cart.html" class="nav-icon" aria-label="Cart">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span class="nav-badge cart-count">0</span>
+            </a>
+
+            <button class="nav-icon mode-button" aria-label="Dark mode">
+                <i class="fa-regular fa-moon"></i>
+            </button>
+
+            <a href="profile.html" class="profile-button" aria-label="Profile">
+                <span class="profile-avatar">
+                    <i class="fa-regular fa-user"></i>
+                </span>
+            </a>
+
+            <button class="mobile-menu-button" aria-label="Menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+        </div>
+
+    </nav>
+
+</header>
+
+
+<!-- SEARCH OVERLAY -->
+<div class="search-overlay">
+
+    <div class="search-box">
+
+        <button class="close-search">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+
+        <span>Search ALFISHA E-STORE</span>
+
+        <div class="search-input-wrapper">
+            <i class="fa-solid fa-magnifying-glass"></i>
+
+            <input
+                type="text"
+                id="product-search"
+                placeholder="Search phones, laptops, headphones..."
+                autocomplete="off">
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- MOBILE NAV -->
+<div class="mobile-nav">
+
+    <a href="index.html">
+        <i class="fa-solid fa-house"></i>
+        <span>Home</span>
+    </a>
+
+    <a href="products.html" class="active">
+        <i class="fa-solid fa-store"></i>
+        <span>Products</span>
+    </a>
+
+    <a href="services.html">
+        <i class="fa-solid fa-headset"></i>
+        <span>Services</span>
+    </a>
+
+    <a href="about.html">
+        <i class="fa-solid fa-circle-info"></i>
+        <span>About</span>
+    </a>
+
+</div>
+
+
+<!-- PRODUCTS PAGE -->
+<main class="products-page">
+
+    <!-- HERO -->
+    <section class="products-hero">
+
+        <div class="products-hero-content">
+
+            <span>ALFISHA COLLECTION</span>
+
+            <h1>
+                Explore Our
+                <strong>Technology.</strong>
+            </h1>
+
+            <p>
+                Discover carefully selected electronics
+                designed for the way you live, work and play.
+            </p>
+
+        </div>
+
+        <div class="products-hero-decoration">
+            <i class="fa-solid fa-mobile-screen"></i>
+            <i class="fa-solid fa-laptop"></i>
+            <i class="fa-solid fa-headphones"></i>
+        </div>
+
+    </section>
+
+
+    <!-- CATEGORIES -->
+    <section class="product-categories">
+
+        <div class="category-scroll">
+
+            <button class="category-filter active" data-category="all">
+                <i class="fa-solid fa-border-all"></i>
+                <span>All</span>
+            </button>
+
+            <button class="category-filter" data-category="phones">
+                <i class="fa-solid fa-mobile-screen-button"></i>
+                <span>Smartphones</span>
+            </button>
+
+            <button class="category-filter" data-category="laptops">
+                <i class="fa-solid fa-laptop"></i>
+                <span>Laptops</span>
+            </button>
+
+            <button class="category-filter" data-category="headphones">
+                <i class="fa-solid fa-headphones"></i>
+                <span>Headphones</span>
+            </button>
+
+            <button class="category-filter" data-category="smartwatch">
+                <i class="fa-solid fa-clock"></i>
+                <span>Smart Watches</span>
+            </button>
+
+            <button class="category-filter" data-category="tablets">
+                <i class="fa-solid fa-tablet-screen-button"></i>
+                <span>Tablets</span>
+            </button>
+
+            <button class="category-filter" data-category="speakers">
+                <i class="fa-solid fa-volume-high"></i>
+                <span>Speakers</span>
+            </button>
+
+            <button class="category-filter" data-category="gaming">
+                <i class="fa-solid fa-gamepad"></i>
+                <span>Gaming</span>
+            </button>
+
+            <button class="category-filter" data-category="accessories">
+                <i class="fa-solid fa-plug"></i>
+                <span>Accessories</span>
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- PRODUCTS -->
+    <section class="products-container">
+
+        <!-- TOOLBAR -->
+        <div class="products-toolbar">
+
+            <div class="products-result">
+                <span>SHOWING</span>
+                <strong id="product-count">20 Products</strong>
+            </div>
+
+            <div class="products-tools">
+
+                <div class="product-search">
+
+                    <i class="fa-solid fa-magnifying-glass"></i>
+
+                    <input
+                        type="text"
+                        id="catalog-search"
+                        placeholder="Search products..."
+                        autocomplete="off">
+
+                </div>
+
+                <div class="sort-wrapper">
+
+                    <label for="sort-products">Sort:</label>
+
+                    <select id="sort-products">
+
+                        <option value="default">Featured</option>
+                        <option value="price-low">Price: Low to High</option>
+                        <option value="price-high">Price: High to Low</option>
+                        <option value="rating">Top Rated</option>
+                        <option value="newest">Newest</option>
+
+                    </select>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- PRODUCT GRID -->
+        <div class="catalog-grid" id="catalog-grid">
+
+
+            <!-- 1 -->
+            <article class="catalog-product"
+                data-category="headphones"
+                data-price="2499"
+                data-rating="5"
+                data-new="5">
+
+                <div class="catalog-image">
+
+                    <span class="catalog-badge">-20%</span>
+
+                    <button class="wishlist-button"
+                        aria-label="Add Premium Wireless Headphones to wishlist">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+
+                    <img
+                        src="images/7.jpg"
+                        alt="Premium Wireless Headphones">
+
+                    <a href="product-details.html" class="quick-view">
+                        View Product
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                </div>
+
+                <div class="catalog-details">
+
+                    <span class="catalog-category">Headphones</span>
+
+                    <h3>Premium Wireless Headphones</h3>
+
+                    <div class="catalog-rating">
+                        <span>★★★★★</span>
+                        <small>128 reviews</small>
+                    </div>
+
+                    <div class="catalog-bottom">
+
+                        <div>
+                            <strong>₹2,499</strong>
+                            <del>₹3,199</del>
+                        </div>
+
+                        <button class="add-cart-button" aria-label="Add to cart">
+                            <i class="fa-solid fa-cart-plus"></i>
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- 2 -->
+            <article class="catalog-product"
+                data-category="smartwatch"
+                data-price="3999"
+                data-rating="5"
+                data-new="10">
+
+                <div class="catalog-image">
+
+                    <span class="catalog-badge new">NEW</span>
+
+                    <button class="wishlist-button"
+                        aria-label="Add ProFit Smart Watch to wishlist">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+
+                    <img
+                        src="images/8.jpg"
+                        alt="ProFit Smart Watch">
+
+                    <a href="product-details.html" class="quick-view">
+                        View Product
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                </div>
+
+                <div class="catalog-details">
+
+                    <span class="catalog-category">Smart Wear</span>
+
+                    <h3>ProFit Smart Watch</h3>
+
+                    <div class="catalog-rating">
+                        <span>★★★★★</span>
+                        <small>94 reviews</small>
+                    </div>
+
+                    <div class="catalog-bottom">
+
+                        <div>
+                            <strong>₹3,999</strong>
+                            <del>₹5,499</del>
+                        </div>
+
+                        <button class="add-cart-button" aria-label="Add to cart">
+                            <i class="fa-solid fa-cart-plus"></i>
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- 3 -->
+            <article class="catalog-product"
+                data-category="phones"
+                data-price="18999"
+                data-rating="5"
+                data-new="8">
+
+                <div class="catalog-image">
+
+                    <span class="catalog-badge">-15%</span>
+
+                    <button class="wishlist-button"
+                        aria-label="Add Nova X5 Smartphone to wishlist">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+
+                    <img
+                        src="images/9.jpg"
+                        alt="Nova X5 Smartphone">
+
+                    <a href="product-details.html" class="quick-view">
+                        View Product
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                </div>
+
+                <div class="catalog-details">
+
+                    <span class="catalog-category">Smartphones</span>
+
+                    <h3>Nova X5 Smartphone</h3>
+
+                    <div class="catalog-rating">
+                        <span>★★★★★</span>
+                        <small>216 reviews</small>
+                    </div>
+
+                    <div class="catalog-bottom">
+
+                        <div>
+                            <strong>₹18,999</strong>
+                            <del>₹21,999</del>
+                        </div>
+
+                        <button class="add-cart-button" aria-label="Add to cart">
+                            <i class="fa-solid fa-cart-plus"></i>
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- 4 -->
+            <article class="catalog-product"
+                data-category="laptops"
+                data-price="54999"
+                data-rating="5"
+                data-new="9">
+
+                <div class="catalog-image">
+
+                    <span class="catalog-badge new">NEW</span>
+
+                    <button class="wishlist-button"
+                        aria-label="Add UltraBook Pro 14 to wishlist">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+
+                    <img
+                        src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?auto=format&fit=crop&w=700&q=85"
+                        alt="UltraBook Pro 14">
+
+                    <a href="product-details.html" class="quick-view">
+                        View Product
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                </div>
+
+                <div class="catalog-details">
+
+                    <span class="catalog-category">Laptops</span>
+
+                    <h3>UltraBook Pro 14</h3>
+
+                    <div class="catalog-rating">
+                        <span>★★★★★</span>
+                        <small>76 reviews</small>
+                    </div>
+
+                    <div class="catalog-bottom">
+
+                        <div>
+                            <strong>₹54,999</strong>
+                            <del>₹62,999</del>
+                        </div>
+
+                        <button class="add-cart-button" aria-label="Add to cart">
+                            <i class="fa-solid fa-cart-plus"></i>
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- 5 -->
+            <article class="catalog-product"
+                data-category="phones"
+                data-price="24999"
+                data-rating="5"
+                data-new="7">
+
+                <div class="catalog-image">
+
+                    <span class="catalog-badge">-12%</span>
+
+                    <button class="wishlist-button"
+                        aria-label="Add Nova Pro Smartphone to wishlist">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+
+                    <img
+                        src="images/12.jpg"
+                        alt="Nova Pro Smartphone">
+
+                    <a href="product-details.html" class="quick-view">
+                        View Product
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                </div>
+
+                <div class="catalog-details">
+
+                    <span class="catalog-category">Smartphones</span>
+
+                    <h3>Nova Pro Smartphone</h3>
+
+                    <div class="catalog-rating">
+                        <span>★★★★★</span>
+                        <small>164 reviews</small>
+                    </div>
+
+                    <div class="catalog-bottom">
+
+                        <div>
+                            <strong>₹24,999</strong>
+                            <del>₹28,499</del>
+                        </div>
+
+                        <button class="add-cart-button" aria-label="Add to cart">
+                            <i class="fa-solid fa-cart-plus"></i>
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- 6 -->
+            <article class="catalog-product"
+                data-category="phones"
+                data-price="32999"
+                data-rating="5"
+                data-new="6">
+
+                <div class="catalog-image">
+
+                    <span class="catalog-badge new">NEW</span>
+
+                    <button class="wishlist-button"
+                        aria-label="Add Edge Max Smartphone to wishlist">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+
+                    <img
+                        src="images/13.jpg"                        alt="Edge Max Smartphone">
+
+                    <a href="product-details.html" class="quick-view">
+                        View Product
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                </div>
+
+                <div class="catalog-details">
+
+                    <span class="catalog-category">Smartphones</span>
+
+                    <h3>Edge Max Smartphone</h3>
+
+                    <div class="catalog-rating">
+                        <span>★★★★★</span>
+                        <small>89 reviews</small>
+                    </div>
+
+                    <div class="catalog-bottom">
+
+                        <div>
+                            <strong>₹32,999</strong>
+                            <del>₹36,999</del>
+                        </div>
+
+                        <button class="add-cart-button" aria-label="Add to cart">
+                            <i class="fa-solid fa-cart-plus"></i>
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- 7 -->
+            <article class="catalog-product"
+                data-category="laptops"
+                data-price="64999"
+                data-rating="5"
+                data-new="8">
+
+                <div class="catalog-image">
+
+                    <span class="catalog-badge">-10%</span>
+
+                    <button class="wishlist-button"
+                        aria-label="Add CreatorBook Pro 15 to wishlist">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+
+                    <img
+                        src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=700&q=85"
+                        alt="CreatorBook Pro 15">
+
+                    <a href="product-details.html" class="quick-view">
+                        View Product
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                </div>
+
+                <div class="catalog-details">
+
+                    <span class="catalog-category">Laptops</span>
+
+                    <h3>CreatorBook Pro 15</h3>
+
+                    <div class="catalog-rating">
+                        <span>★★★★★</span>
+                        <small>112 reviews</small>
+                    </div>
+
+                    <div class="catalog-bottom">
+
+                        <div>
+                            <strong>₹64,999</strong>
+                            <del>₹71,999</del>
+                        </div>
+
+                        <button class="add-cart-button" aria-label="Add to cart">
+                            <i class="fa-solid fa-cart-plus"></i>
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- 8 -->
+            <article class="catalog-product"
+                data-category="laptops"
+                data-price="72999"
+                data-rating="5"
+                data-new="5">
+
+                <div class="catalog-image">
+
+                    <span class="catalog-badge new">NEW</span>
+
+                    <button class="wishlist-button"
+                        aria-label="Add BusinessBook Air 15 to wishlist">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+
+                    <img
+                        src="https://images.unsplash.com/photo-1484788984921-03950022c9ef?auto=format&fit=crop&w=700&q=85"
+                        alt="BusinessBook Air 15">
+
+                    <a href="product-details.html" class="quick-view">
+                        View Product
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                </div>
+
+                <div class="catalog-details">
+
+                    <span class="catalog-category">Laptops</span>
+
+                    <h3>BusinessBook Air 15</h3>
+
+                    <div class="catalog-rating">
+                        <span>★★★★★</span>
+                        <small>71 reviews</small>
+                    </div>
+
+                    <div class="catalog-bottom">
+
+                        <div>
+                            <strong>₹72,999</strong>
+                            <del>₹79,999</del>
+                        </div>
+
+                        <button class="add-cart-button" aria-label="Add to cart">
+                            <i class="fa-solid fa-cart-plus"></i>
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- 9 -->
+            <article class="catalog-product"
+                data-category="headphones"
+                data-price="3499"
+                data-rating="4"
+                data-new="4">
+
+                <div class="catalog-image">
+
+                    <span class="catalog-badge">-18%</span>
+
+                    <button class="wishlist-button"
+                        aria-label="Add Studio Sound Headphones to wishlist">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+
+                    <img
+                        src="https://images.unsplash.com/photo-1484704849700-f032a568e944?auto=format&fit=crop&w=700&q=85"
+                        alt="Studio Sound Headphones">
+
+                    <a href="product-details.html" class="quick-view">
+                        View Product
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                </div>
+
+                <div class="catalog-details">
+
+                    <span class="catalog-category">Headphones</span>
+
+                    <h3>Studio Sound Headphones</h3>
+
+                    <div class="catalog-rating">
+                        <span>★★★★☆</span>
+                        <small>87 reviews</small>
+                    </div>
+
+                    <div class="catalog-bottom">
+
+                        <div>
+                            <strong>₹3,499</strong>
+                            <del>₹4,299</del>
+                        </div>
+
+                        <button class="add-cart-button" aria-label="Add to cart">
+                            <i class="fa-solid fa-cart-plus"></i>
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- 10 -->
+            <article class="catalog-product"
+                data-category="headphones"
+                data-price="5999"
+                data-rating="5"
+                data-new="3">
+
+                <div class="catalog-image">
+
+                    <span class="catalog-badge new">NEW</span>
+
+                    <button class="wishlist-button"
+                        aria-label="Add NoiseFree Pro Headphones to wishlist">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+
+                    <img
+                        src="https://images.unsplash.com/photo-1546435770-a3e426bf472b?auto=format&fit=crop&w=700&q=85"
+                        alt="NoiseFree Pro Headphones">
+
+                    <a href="product-details.html" class="quick-view">
+                        View Product
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                </div>
+
+                <div class="catalog-details">
+
+                    <span class="catalog-category">Headphones</span>
+
+                    <h3>NoiseFree Pro Headphones</h3>
+
+                    <div class="catalog-rating">
+                        <span>★★★★★</span>
+                        <small>143 reviews</small>
+                    </div>
+
+                    <div class="catalog-bottom">
+
+                        <div>
+                            <strong>₹5,999</strong>
+                            <del>₹7,499</del>
+                        </div>
+
+                        <button class="add-cart-button" aria-label="Add to cart">
+                            <i class="fa-solid fa-cart-plus"></i>
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- 11 -->
+            <article class="catalog-product"
+                data-category="smartwatch"
+                data-price="4499"
+                data-rating="5"
+                data-new="9">
+
+                <div class="catalog-image">
+
+                    <span class="catalog-badge">-16%</span>
+
+                    <button class="wishlist-button"
+                        aria-label="Add ActiveFit Smart Watch to wishlist">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+
+                    <img
+                        src="images/02.jpg"
+                        alt="ActiveFit Smart Watch">
+
+                    <a href="product-details.html" class="quick-view">
+                        View Product
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                </div>
+
+                <div class="catalog-details">
+
+                    <span class="catalog-category">Smart Wear</span>
+
+                    <h3>ActiveFit Smart Watch</h3>
+
+                    <div class="catalog-rating">
+                        <span>★★★★★</span>
+                        <small>121 reviews</small>
+                    </div>
+
+                    <div class="catalog-bottom">
+
+                        <div>
+                            <strong>₹4,499</strong>
+                            <del>₹5,399</del>
+                        </div>
+
+                        <button class="add-cart-button" aria-label="Add to cart">
+                            <i class="fa-solid fa-cart-plus"></i>
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- 12 -->
+            <article class="catalog-product"
+                data-category="smartwatch"
+                data-price="6999"
+                data-rating="4"
+                data-new="2">
+
+                <div class="catalog-image">
+
+                    <span class="catalog-badge new">NEW</span>
+
+                    <button class="wishlist-button"
+                        aria-label="Add SmartTime Elite Watch to wishlist">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+
+                    <img
+                        src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=700&q=85"
+                        alt="SmartTime Elite Watch">
+
+                    <a href="product-details.html" class="quick-view">
+                        View Product
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                </div>
+
+                <div class="catalog-details">
+
+                    <span class="catalog-category">Smart Wear</span>
+
+                    <h3>SmartTime Elite Watch</h3>
+
+                    <div class="catalog-rating">
+                        <span>★★★★☆</span>
+                        <small>63 reviews</small>
+                    </div>
+
+                    <div class="catalog-bottom">
+
+                        <div>
+                            <strong>₹6,999</strong>
+                            <del>₹8,499</del>
+                        </div>
+
+                        <button class="add-cart-button" aria-label="Add to cart">
+                            <i class="fa-solid fa-cart-plus"></i>
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- 13 -->
+            <article class="catalog-product"
+                data-category="tablets"
+                data-price="21999"
+                data-rating="5"
+                data-new="7">
+
+                <div class="catalog-image">
+
+                    <span class="catalog-badge">-14%</span>
+
+                    <button class="wishlist-button"
+                        aria-label="Add TabPro 11 Tablet to wishlist">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+
+                    <img
+                        src="https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?auto=format&fit=crop&w=700&q=85"
+                        alt="TabPro 11 Tablet">
+
+                    <a href="product-details.html" class="quick-view">
+                        View Product
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                </div>
+
+                <div class="catalog-details">
+
+                    <span class="catalog-category">Tablets</span>
+
+                    <h3>TabPro 11 Tablet</h3>
+
+                    <div class="catalog-rating">
+                        <span>★★★★★</span>
+                        <small>98 reviews</small>
+                    </div>
+
+                    <div class="catalog-bottom">
+
+                        <div>
+                            <strong>₹21,999</strong>
+                            <del>₹25,499</del>
+                        </div>
+
+                        <button class="add-cart-button" aria-label="Add to cart">
+                            <i class="fa-solid fa-cart-plus"></i>
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- 14 -->
+            <article class="catalog-product"
+                data-category="tablets"
+                data-price="28999"
+                data-rating="5"
+                data-new="6">
+
+                <div class="catalog-image">
+
+                    <span class="catalog-badge new">NEW</span>
+
+                    <button class="wishlist-button"
+                        aria-label="Add AirTab Max to wishlist">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+
+                    <img
+                        src="https://images.unsplash.com/photo-1561154464-82e9adf32764?auto=format&fit=crop&w=700&q=85"
+                        alt="AirTab Max Tablet">
+
+                    <a href="product-details.html" class="quick-view">
+                        View Product
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                </div>
+
+                <div class="catalog-details">
+
+                    <span class="catalog-category">Tablets</span>
+
+                    <h3>AirTab Max</h3>
+
+                    <div class="catalog-rating">
+                        <span>★★★★★</span>
+                        <small>74 reviews</small>
+                    </div>
+
+                    <div class="catalog-bottom">
+
+                        <div>
+                            <strong>₹28,999</strong>
+                            <del>₹32,999</del>
+                        </div>
+
+                        <button class="add-cart-button" aria-label="Add to cart">
+                            <i class="fa-solid fa-cart-plus"></i>
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- 15 -->
+            <article class="catalog-product"
+                data-category="speakers"
+                data-price="2999"
+                data-rating="5"
+                data-new="6">
+
+                <div class="catalog-image">
+
+                    <span class="catalog-badge">-20%</span>
+
+                    <button class="wishlist-button"
+                        aria-label="Add BoomBox Bluetooth Speaker to wishlist">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+
+                    <img
+                        src="https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?auto=format&fit=crop&w=700&q=85"
+                        alt="BoomBox Bluetooth Speaker">
+
+                    <a href="product-details.html" class="quick-view">
+                        View Product
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                </div>
+
+                <div class="catalog-details">
+
+                    <span class="catalog-category">Speakers</span>
+
+                    <h3>BoomBox Bluetooth Speaker</h3>
+
+                    <div class="catalog-rating">
+                        <span>★★★★★</span>
+                        <small>154 reviews</small>
+                    </div>
+
+                    <div class="catalog-bottom">
+
+                        <div>
+                            <strong>₹2,999</strong>
+                            <del>₹3,799</del>
+                        </div>
+
+                        <button class="add-cart-button" aria-label="Add to cart">
+                            <i class="fa-solid fa-cart-plus"></i>
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- 16 -->
+            <article class="catalog-product"
+                data-category="speakers"
+                data-price="4999"
+                data-rating="4"
+                data-new="4">
+
+                <div class="catalog-image">
+
+                    <span class="catalog-badge">-15%</span>
+
+                    <button class="wishlist-button"
+                        aria-label="Add SoundWave Mini Speaker to wishlist">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+
+                    <img
+                        src="https://images.unsplash.com/photo-1589003077984-894e133dabab?auto=format&fit=crop&w=700&q=85"
+                        alt="SoundWave Mini Speaker">
+
+                    <a href="product-details.html" class="quick-view">
+                        View Product
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                </div>
+
+                <div class="catalog-details">
+
+                    <span class="catalog-category">Speakers</span>
+
+                    <h3>SoundWave Mini Speaker</h3>
+
+                    <div class="catalog-rating">
+                        <span>★★★★☆</span>
+                        <small>92 reviews</small>
+                    </div>
+
+                    <div class="catalog-bottom">
+
+                        <div>
+                            <strong>₹4,999</strong>
+                            <del>₹5,899</del>
+                        </div>
+
+                        <button class="add-cart-button" aria-label="Add to cart">
+                            <i class="fa-solid fa-cart-plus"></i>
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- 17 -->
+            <article class="catalog-product"
+                data-category="gaming"
+                data-price="7499"
+                data-rating="5"
+                data-new="8">
+
+                <div class="catalog-image">
+
+                    <span class="catalog-badge new">NEW</span>
+
+                    <button class="wishlist-button"
+                        aria-label="Add Pro Gaming Controller to wishlist">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+
+                    <img
+                        src="https://images.unsplash.com/photo-1593305841991-05c297ba4575?auto=format&fit=crop&w=700&q=85"
+                        alt="Pro Gaming Controller">
+
+                    <a href="product-details.html" class="quick-view">
+                        View Product
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                </div>
+
+                <div class="catalog-details">
+
+                    <span class="catalog-category">Gaming</span>
+
+                    <h3>Pro Gaming Controller</h3>
+
+                    <div class="catalog-rating">
+                        <span>★★★★★</span>
+                        <small>82 reviews</small>
+                    </div>
+
+                    <div class="catalog-bottom">
+
+                        <div>
+                            <strong>₹7,499</strong>
+                            <del>₹8,999</del>
+                        </div>
+
+                        <button class="add-cart-button" aria-label="Add to cart">
+                            <i class="fa-solid fa-cart-plus"></i>
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- 18 -->
+            <article class="catalog-product"
+                data-category="gaming"
+                data-price="8999"
+                data-rating="5"
+                data-new="5">
+
+                <div class="catalog-image">
+
+                    <span class="catalog-badge">-12%</span>
+
+                    <button class="wishlist-button"
+                        aria-label="Add Arena Gaming Headset to wishlist">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+
+                    <img
+                        src="https://images.unsplash.com/photo-1599669454699-248893623440?auto=format&fit=crop&w=700&q=85"
+                        alt="Arena Gaming Headset">
+
+                    <a href="product-details.html" class="quick-view">
+                        View Product
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                </div>
+
+                <div class="catalog-details">
+
+                    <span class="catalog-category">Gaming</span>
+
+                    <h3>Arena Gaming Headset</h3>
+
+                    <div class="catalog-rating">
+                        <span>★★★★★</span>
+                        <small>137 reviews</small>
+                    </div>
+
+                    <div class="catalog-bottom">
+
+                        <div>
+                            <strong>₹8,999</strong>
+                            <del>₹10,199</del>
+                        </div>
+
+                        <button class="add-cart-button" aria-label="Add to cart">
+                            <i class="fa-solid fa-cart-plus"></i>
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- 19 -->
+            <article class="catalog-product"
+                data-category="accessories"
+                data-price="1499"
+                data-rating="4"
+                data-new="4">
+
+                <div class="catalog-image">
+
+                    <span class="catalog-badge">-25%</span>
+
+                    <button class="wishlist-button"
+                        aria-label="Add FastCharge Power Adapter to wishlist">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+
+                    <img
+                        src="https://images.unsplash.com/photo-1583863788434-e58a36330cf0?auto=format&fit=crop&w=700&q=85"
+                        alt="FastCharge Power Adapter">
+
+                    <a href="product-details.html" class="quick-view">
+                        View Product
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                </div>
+
+                <div class="catalog-details">
+
+                    <span class="catalog-category">Accessories</span>
+
+                    <h3>FastCharge Power Adapter</h3>
+
+                    <div class="catalog-rating">
+                        <span>★★★★☆</span>
+                        <small>201 reviews</small>
+                    </div>
+
+                    <div class="catalog-bottom">
+
+                        <div>
+                            <strong>₹1,499</strong>
+                            <del>₹1,999</del>
+                        </div>
+
+                        <button class="add-cart-button" aria-label="Add to cart">
+                            <i class="fa-solid fa-cart-plus"></i>
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- 20 -->
+            <article class="catalog-product"
+                data-category="accessories"
+                data-price="1999"
+                data-rating="5"
+                data-new="3">
+
+                <div class="catalog-image">
+
+                    <span class="catalog-badge new">NEW</span>
+
+                    <button class="wishlist-button"
+                        aria-label="Add Wireless Charging Stand to wishlist">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+
+                    <img
+                        src="https://images.unsplash.com/photo-1586953208448-b95a79798f07?auto=format&fit=crop&w=700&q=85"
+                        alt="Wireless Charging Stand">
+
+                    <a href="product-details.html" class="quick-view">
+                        View Product
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                </div>
+
+                <div class="catalog-details">
+
+                    <span class="catalog-category">Accessories</span>
+
+                    <h3>Wireless Charging Stand</h3>
+
+                    <div class="catalog-rating">
+                        <span>★★★★★</span>
+                        <small>118 reviews</small>
+                    </div>
+
+                    <div class="catalog-bottom">
+
+                        <div>
+                            <strong>₹1,999</strong>
+                            <del>₹2,499</del>
+                        </div>
+
+                        <button class="add-cart-button" aria-label="Add to cart">
+                            <i class="fa-solid fa-cart-plus"></i>
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+        </div>
+
+
+        <!-- NO RESULTS -->
+        <div class="no-products" id="no-products" style="display:none;">
+
+            <div>
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+
+            <h2>No products found</h2>
+
+            <p>
+                Try another search or choose a different category.
+            </p>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<!-- FOOTER -->
+<footer class="site-footer">
+
+    <div class="footer-container">
+
+        <div class="footer-brand">
+
+            <a href="index.html" class="logo">
+
+                <span class="logo-icon">
+                    <i class="fa-solid fa-bolt"></i>
+                </span>
+
+                <span class="logo-text">
+                    ALFISHA
+                    <small>E-STORE</small>
+                </span>
+
+            </a>
+
+            <p>
+                Your trusted destination for modern electronics
+                and smart technology.
+            </p>
+
+            <div class="social-links">
+
+                <a href="#" aria-label="Instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+
+                <a href="#" aria-label="Facebook">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+
+                <a href="#" aria-label="X">
+                    <i class="fa-brands fa-x-twitter"></i>
+                </a>
+
+                <a href="#" aria-label="YouTube">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h3>Shop</h3>
+
+            <a href="products.html">All Products</a>
+            <a href="products.html?category=phones">Smartphones</a>
+            <a href="products.html?category=laptops">Laptops</a>
+            <a href="products.html?category=headphones">Headphones</a>
+            <a href="products.html?category=smartwatch">Smart Watches</a>
+            <a href="products.html?category=tablets">Tablets</a>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h3>Categories</h3>
+
+            <a href="products.html?category=speakers">Speakers</a>
+            <a href="products.html?category=gaming">Gaming</a>
+            <a href="products.html?category=accessories">Accessories</a>
+            <a href="wishlist.html">Wishlist</a>
+            <a href="cart.html">Shopping Cart</a>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h3>Customer Care</h3>
+
+            <a href="services.html">Help Center</a>
+            <a href="services.html">Shipping Information</a>
+            <a href="services.html">Returns & Refunds</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms & Conditions</a>
+
+        </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+        <p>
+            © 2026
+            <strong>ALFISHA E-STORE</strong>.
+            All Rights Reserved.
+        </p>
+
+        <p>
+            Made with
+            <i class="fa-solid fa-heart"></i>
+            for technology lovers.
+        </p>
+
+    </div>
+
+</footer>
+
+
+<!-- TOAST -->
+<div class="toast-notification">
+
+    <i class="fa-solid fa-circle-check"></i>
+
+    <span>
+        Added to cart!
+    </span>
+
+</div>
+
+
+<!-- JAVASCRIPT -->
+<script src="js/main.js"></script>
+<script src="js/product-details.js"></script></body>
+</html>
